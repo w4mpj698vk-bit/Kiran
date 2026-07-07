@@ -341,6 +341,7 @@ loadGuestList();
     try {
       const response = await fetch(webAppUrl, {
         method: 'POST',
+        mode: 'no-cors',
         body: formData,
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded'
